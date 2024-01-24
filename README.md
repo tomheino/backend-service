@@ -1,5 +1,5 @@
 # Final Compulsory Task of Server Technologies
-Author: Tommi Heino - x104174
+Author: Tommi Heino
 
 ## About
 Implementation consists of 5 endpoints using protocols GET, POST, PUT, DELETE:    
