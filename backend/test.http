@@ -1,0 +1,65 @@
+###
+GET {{$dotenv BACKURL}}
+
+###
+GET {{$dotenv BACKURL}}/api/students
+
+###
+GET {{$dotenv BACKURL}}/api/student/1
+
+###
+POST {{$dotenv BACKURL}}/api/student/add
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "Vallu Virtanen", 
+    "credits": 56 
+}
+
+###
+POST {{$dotenv BACKURL}}/api/student/add
+Content-Type: application/json
+
+{
+    "id": 2,
+    "name": "Jaakko Jäynä", 
+    "credits": 88 
+}
+
+###
+POST {{$dotenv BACKURL}}/api/student/add
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "Tommi Tumpelo",
+    "credits": 100 
+}
+
+###
+PUT {{$dotenv BACKURL}}/api/student/update
+Content-Type: application/json
+
+{
+    "id": 8,
+    "name": "Jaakko Virtanen", 
+    "credits": 224 
+}
+
+###
+PUT {{$dotenv BACKURL}}/api/student/update
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "Vallu Virtanen", 
+    "credits": 224 
+}
+
+###
+DELETE {{$dotenv BACKURL}}/api/student/remove/1
+
+###
+DELETE {{$dotenv BACKURL}}/api/student/remove/55
+

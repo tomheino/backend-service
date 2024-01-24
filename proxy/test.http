@@ -1,0 +1,64 @@
+###
+GET {{$dotenv PROXYURL}}
+
+###
+GET {{$dotenv PROXYURL}}/api/students
+
+###
+POST {{$dotenv PROXYURL}}/api/student/add
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "Vallu Virtanen", 
+    "credits": 56 
+}
+
+###
+POST {{$dotenv PROXYURL}}/api/student/add
+Content-Type: application/json
+
+{
+    "name": "Jaakko Jäynä", 
+    "credits": 88 
+}
+
+###
+GET {{$dotenv PROXYURL}}/api/student/1
+
+###
+POST {{$dotenv PROXYURL}}/api/student/add
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "Tommi Tumpelo",
+    "credits": 100 
+}
+
+###
+PUT {{$dotenv PROXYURL}}/api/student/update
+Content-Type: application/json
+
+{
+    "id": 8,
+    "name": "Jaakko Virtanen", 
+    "credits": 224 
+}
+
+###
+PUT {{$dotenv PROXYURL}}/api/student/update
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "Vallu Virtanen", 
+    "credits": 224 
+}
+
+###
+DELETE {{$dotenv PROXYURL}}/api/student/remove/1
+
+###
+DELETE {{$dotenv PROXYURL}}/api/student/remove/55
+
